@@ -11,7 +11,7 @@ function Heart({ heart, setHeart }) {
   useEffect(() => {
     getHeart();
   }, []);
-
+  const iduser = localStorage.getItem('id');
   function getHeart() {
     if (localStorage.getItem('id') === null) {
       console.log('nabisotth')
@@ -89,7 +89,7 @@ function Heart({ heart, setHeart }) {
                 </tr>
               </thead>
               <tbody>
-                {heart.map((item) => {
+                {heart.filter((itemfilter)=>itemfilter.userid == iduser).map((item) => {
                   return (
                     <tr key={item.id}>
                       <td><img src={item.image} className="imageheart" /></td>
@@ -113,8 +113,8 @@ function Heart({ heart, setHeart }) {
               </tbody>
             </Table>
           </div>
-        </div>)}
 
+        </div>)}
         <div className='footer'>
           <img src={logo2} />
           <div className='footer_list'>

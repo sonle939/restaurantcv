@@ -15,7 +15,7 @@ function Card({ card, setCard }) {
 
   function getCard() {
     if (localStorage.getItem('id') === null) {
-      console.log('im mom')
+      console.log('abc')
     } else {
       axios.get('http://localhost/groupseven/backend/card/').then(function (response) {
         console.log(response.data);
@@ -211,6 +211,46 @@ function Card({ card, setCard }) {
             </div>
           </div>
         </div>
+
+        <div className='footer'>
+        <img src={logo2} />
+        <div className='footer_list'>
+          <div className='footer_item'>
+            <i className="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div className='footer_item'>
+            <i className="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+          <div className='footer_item'>
+            <i className="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div className='footer_item'>
+            <i className="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div className='footer_item'>
+            <i className="fa fa-google" aria-hidden="true"></i>
+          </div>
+        </div>
+        <h3>Get new & offers</h3>
+        <div className='footer_intput'>
+          <input placeholder='Your email' type='text' />
+          <div className='footer_icon'>
+            <i className="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div className='footer_menu'>
+          <Link to="/">Home</Link>
+          <span></span>
+          <Link to="/menu" >Menu</Link>
+          <span></span>
+          <Link to="/book" >Book</Link>
+          <span></span>
+          <Link to="/promotion" >Promotion</Link>
+        </div>
+        <h3 className='footer_copyright'>
+          @2022 Created by Groupseven. All right LeeXs
+        </h3>
+      </div>
       </div>
     </HelmetProvider>
   )

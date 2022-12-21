@@ -14,6 +14,7 @@ switch ($method) {
     case "GET":
         $sql = "SELECT * FROM bookingtable";
         $path = explode('/', $_SERVER['REQUEST_URI']);
+        print_r($path);
         if (isset($path[4]) && is_numeric($path[4])) {
             $sql .= " WHERE id = :id";
             $stmt = $conn->prepare($sql);
