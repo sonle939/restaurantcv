@@ -1,0 +1,232 @@
+.infouser{
+    height: 90vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.infouser_container{
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 6px;
+}
+.userinfo_overlayImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userinfo_overlayImage.active{
+    display: none;
+}
+.overlayimguser{
+    height: 600px;
+    width: 50%;
+    border-radius: 6px;
+    background-color: white;
+
+}
+.overlayimguser h3{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.overlayimguser_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 485px;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+.overlayimguser_list::-webkit-scrollbar{
+    width: 2px;
+}
+.overlayimguser_list::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.overlayimguser_list::-webkit-scrollbar-track{
+    background-color: white;
+}
+.overlayimguser_item{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px;
+}
+.overlayimguser_item.active{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid #fbbf24;
+}
+.overlayimguser_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.infouser_exit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.infouser_exit button{
+    height: 40px;
+    width: 160px;
+    background-color: #fbbf24;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.infouser_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.infouser_img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+.infouser_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.infouser_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infouser_btn{
+    padding-top: 15px;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    background-color: #ccc;
+    border-radius: 6px;
+    margin: 10px 5px;
+}
+.infouser_btn.active{
+    display: none;
+}
+.infouser_btn1{
+    padding-top: 15px;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    background-color: #ccc;
+    border-radius: 6px;
+    margin: 10px 5px;
+}
+.infouser_btn1.active{
+   display: none;
+}
+.infouser_btn1 i{
+    font-size: 20px;
+}
+.infouser_btn i{
+    font-size: 20px;
+}
+.infouser_btn1 p{
+    font-weight: bold;
+}
+.infouser_btn p{
+    font-weight: bold;
+}
+.infouser_description{
+    margin-left: 25px;
+}
+.infouser_description h3{
+    color: #fcd34d;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.info_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.info_item p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.info_item input{
+    height: 40px;
+    width: 200px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+.infor_button{
+    margin-top: 20px;
+}
+.infor_button.active{
+    display: none;
+}
+.infor_button button{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 20px;
+}
+.infor_button .save{
+    background-color: #fcd34d;
+    
+}
+.infor_button .cancel{
+    background-color: transparent;
+    border: 2px solid #fcd34d;
+    color: white;
+}

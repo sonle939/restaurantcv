@@ -1,0 +1,132 @@
+.heart {
+  background-color: #111;
+}
+.imageheart {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.heart_breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.heart_breadcrumb a {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ccc;
+}
+.heart_breadcrumb .Favourite {
+  color: #fcd34d;
+}
+.heart_breadcrumb i {
+  color: #ccc;
+  font-size: 20px;
+}
+.heart_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+  padding: 30px;
+}
+.heart_wrapper h3 {
+  color: #fcd34d;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.heart_list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.heart_table {
+  width: 100%;
+}
+.heart_table th {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.pronameid_table {
+  display: none;
+}
+.heart_table > button {
+  background-color: #111;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #312f2f;
+  --color-2: #7e8588;
+  --color-3: #98da20;
+}
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
+}
+
+.title-word-3 {
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
+}
+
+.title-word-4 {
+  --color-1: #3d8dae;
+  --color-2: #df8453;
+  --color-3: #e4a9a8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+/* Here are just some visual styles. 🖌 */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.title span{
+    margin: 0 10px;
+}

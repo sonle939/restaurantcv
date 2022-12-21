@@ -1,0 +1,246 @@
+.about{
+    background-color: #111;
+}
+.about_banner{
+    position: relative;
+    height: 470px;
+    width: 100%;
+} 
+.about_banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about_banner h3{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.aboutkaffen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.aboutkaffen_content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.aboutkaffen_content h2{
+    font-size: 45px;
+    color: #b99272;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.aboutkaffen_content h4{
+    font-size: 38px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.aboutkaffen_content p{
+    color: white;
+    width: 72%;
+    font-size: 20px;
+}
+.aboutkaffen_content-item{
+    display: flex;
+    align-items: center;
+
+}
+.aboutkaffen_content-item i{
+    font-size: 40px;
+    color: #b99272;
+}
+.aboutkaffen_content-item .content-item_text{
+    margin-left: 35px;
+
+}
+.aboutkaffen_content-item .content-item_text h3{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.aboutkaffen_content-item .content-item_text p{
+    color: #ccc;
+}
+.aboutkaffen_content a{
+    text-decoration: none;
+    font-size: 28px;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b99272;
+    color: #333;
+    border-radius: 6px;
+}
+.aboutkaffen_image{
+    width: 480px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutkaffen_image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.aboutcertification{
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.certification_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 15px 30px;
+}
+.certification_icon{
+    padding: 15px;
+    background-color: #333;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.certification_icon i{
+    font-size: 50px;
+    color: #b99272;
+}
+.certification_item span{
+    font-size: 45px;
+    color: #b99272;
+    letter-spacing: 1px;
+
+}
+.certification_item h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.aboutchef{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 550px;
+}
+.chef_slogan{
+    text-align: center;
+}
+.chef_slogan h2{
+    font-size: 20px;
+    color: #b99272;
+    letter-spacing: 1px;
+
+}
+.chef_slogan p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 45px;
+}
+.chef_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chef_item{
+    height: 270px;
+    width: 275px;
+    background-color: black;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.chef_info{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.chef_info h3{
+    color: white;
+    letter-spacing: 1px;
+}
+.chef_info p{
+    color: #b99272;
+    letter-spacing: 1px;
+
+}
+.chef_image{
+    height: 240px;
+    width: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+.chef_image:hover > img{
+    
+}
+.chef_image:hover .chef_overlay{
+   opacity: 1;
+}
+.chef_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.5s linear;
+}
+.chef_overlay{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.chef_overlay p{
+    color: white;
+    font-size: 20px;
+    margin: 3px 0;
+}
+.cheflist_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.chefitem_icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #b99272;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+.chefitem_icon i{
+    font-size: 18px;
+}

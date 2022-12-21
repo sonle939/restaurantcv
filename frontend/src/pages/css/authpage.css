@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+body {
+  font-family: "Dancing Script", cursive;
+}
+.auth_page {
+  position: relative;
+}
+.navbar_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: #111;
+  width: 100%;
+  z-index: 99;
+}
+
+/*navbar 2*/
+.navbar_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 10px;
+  justify-content: space-around;
+}
+.nav_icon {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.nav_icon li {
+  list-style: none;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.nav_icon li i {
+  font-size: 18px;
+  color: #fff;
+}
+.navbar_address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_address h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.navbar_userlist a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.navbar_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #333; */
+  padding: 10px;
+}
+
+.menu_admin {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.menu_admin li {
+  margin: 0 15px;
+  letter-spacing: 1px;
+  list-style: none;
+}
+.menu_admin li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+.nav_control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.nav_control_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  color: white;
+}
+.nav_control_item a{
+  text-decoration: none;
+  color: white;
+}
+.nav_control .menu_admin li a {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.nav_control .menu_admin li a::after,
+.nav_control .menu_admin li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.nav_control .menu_admin li a::before {
+  background-color: #fcd34d;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.nav_control .menu_admin li a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #fcd34d;
+}
+
+.nav_control .menu_admin li a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.nav_control .menu_admin li a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.nav_control .menu_admin li a span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.nav_control .menu_admin li a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+/*usser*/
+
+.navbar_username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+  padding: 10px;
+  height: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.navbar_username .username_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.navbar_username .username_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.navbar_username .text_user {
+  font-size: 17px;
+  margin-top: 14px;
+  color: white;
+}
+.username_overlay {
+  position: absolute;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.5s ease-in;
+  display: none;
+}
+.username_overlay.active {
+  position: absolute;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 185px;
+  height: 210px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.5s ease-in;
+  z-index: 99;
+}
+.overlay_item {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  width: 100%;
+}
+.ovelay_icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dadada;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.ovelay_icon i {
+  font-size: 20px;
+}
+.overlay_item p {
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding-top: 14px;
+}
+
+.navbar_userlist .link_user{
+  color: #fff;
+}

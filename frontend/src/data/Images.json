@@ -1,0 +1,194 @@
+[
+    {
+        "id": "1",
+        "name": "lẩu gà",
+        "image": "https://i.pinimg.com/564x/c5/33/e0/c533e08182394be8264c879498af127c.jpg",
+        "category":"hotpot"
+    },
+    {
+        "id": "2",
+        "name": "thịt lợn nướng",
+        "image": "https://i.pinimg.com/564x/a1/05/b4/a105b4ff05c12682981bfc8af3419a36.jpg",
+        "category":"grilled"
+    },
+    {
+        "id": "3",
+        "name": "gỏi cuốn",
+        "image": "https://i.pinimg.com/736x/92/79/a9/9279a9a9d0e4c04575021c37e5ccc642.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "4",
+        "name":"CocaCola",
+        "image": "https://i.pinimg.com/564x/ae/2d/65/ae2d65d73a98f127fdc0b320b2482c8b.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "5",
+        "name":"Pepsi",
+        "image": "https://i.pinimg.com/564x/a8/ba/4a/a8ba4ac3be76f601bc80c923e93dfa4b.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "6",
+        "name":"7 Up",
+        "image": "https://i.pinimg.com/564x/25/6a/dc/256adc902ee38a118c16977ee6c6809a.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "7",
+        "name":"Red Bull",
+        "image": "https://i.pinimg.com/564x/4b/51/34/4b51341858d6bf10841fa3c12fc85adf.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "8",
+        "name":"Mirinda",
+        "image": "https://i.pinimg.com/564x/99/0b/46/990b466538fbdc1f4b6722a6a393e908.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "9",
+        "name":"Bia",
+        "image": "https://i.pinimg.com/564x/68/1a/2c/681a2c039946b0e9ae695c6637425a0f.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "10",
+        "name":"Rượu vang",
+        "image": "https://i.pinimg.com/564x/aa/e9/7d/aae97d012303e32a26e1743a61eed61e.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "11",
+        "name":"Rượu ba kích",
+        "image": "https://i.pinimg.com/564x/1c/3f/82/1c3f823181daabcdded75de0edecadf9.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "12",
+        "name":"Bia hơi",
+        "image": "https://i.pinimg.com/564x/5d/41/ba/5d41ba4fb172c97bcaf0b4ec7aa97610.jpg",
+        "category":"drinks"
+    },
+    {
+        "id": "13",
+        "name": "lẩu cá kèo",
+        "image": "https://i.pinimg.com/564x/71/b1/a0/71b1a0ee56683c9ec67605a4be4ada62.jpg",
+        "category":"hotpot"
+    },
+    {
+        "id": "14",
+        "name": "lẩu mắm",
+        "image": "https://i.pinimg.com/736x/56/5b/75/565b753c4463c227da766d778f22c5fc.jpg",
+        "category":"hotpot"
+    },
+    {
+        "id": "15",
+        "name": "lẩu hải sản",
+        "image": "https://i.pinimg.com/236x/b4/3c/22/b43c2246b182eacf81708dad181e7bae.jpg",
+        "category":"hotpot"
+    },
+    {
+        "id": "16",
+        "name": "lẩu ếch",
+        "image": "https://i.pinimg.com/564x/d5/39/d5/d539d5df239069f85b1e276344c770f1.jpg",
+        "category":"hotpot"
+    },
+    {
+        "id": "17",
+        "name": "lẩu riêu cua",
+        "image": "https://i.pinimg.com/564x/21/d4/2d/21d42d1f4cadb7125f6f404b991757fe.jpg",
+        "category":"hotpot"
+    },
+    {
+        "id": "18",
+        "name": "Lòng non nướng",
+        "image": "https://i.pinimg.com/736x/25/9c/59/259c5933bfd92fd88febb144c4452c67.jpg",
+        "category":"grilled"
+    },
+    {
+        "id": "19",
+        "name": "thịt bò nướng",
+        "image": "https://i.pinimg.com/736x/68/dc/6a/68dc6afa6b4324bc3578cc7d38545073.jpg",
+        "category":"grilled"
+    },
+    {
+        "id": "20",
+        "name": "Sụn nướng",
+        "image": "https://i.pinimg.com/564x/3b/c6/9e/3bc69eef38ec557f0d7fa4f13d7a2b55.jpg",
+        "category":"grilled"
+    },
+    {
+        "id": "21",
+        "name": "Xúc xích nướng",
+        "image": "https://i.pinimg.com/564x/86/7e/42/867e428d30c63de31d41b46caffad9c4.jpg",
+        "category":"grilled"
+    },
+    {
+        "id": "22",
+        "name": "Hải sản nướng",
+        "image": "https://i.pinimg.com/564x/6b/1a/59/6b1a59a9e9bf07e1e141961c963a7087.jpg",
+        "category":"grilled"
+    },
+    {
+        "id": "23",
+        "name": "Kimbap",
+        "image": "https://i.pinimg.com/736x/53/e9/74/53e9743def81ba4c714d089e219ac801.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "24",
+        "name": "Sushi",
+        "image": "https://i.pinimg.com/564x/ef/ca/26/efca2616e091e0d86892c94961c0be61.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "25",
+        "name": "Khoai tây chiên",
+        "image": "https://i.pinimg.com/736x/da/2f/ed/da2fedcc404bcae8ad142955259ddc61.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "26",
+        "name": "Salad",
+        "image": "https://i.pinimg.com/736x/f5/09/44/f509447f75a554d4249a21f48c5b792a.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "27",
+        "name": "gỏi cuốn",
+        "image": "https://i.pinimg.com/736x/92/79/a9/9279a9a9d0e4c04575021c37e5ccc642.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "28",
+        "name": "Kem",
+        "image": "https://i.pinimg.com/736x/4d/cd/f7/4dcdf7d0ac446116b61e852b4a4d3e65.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "29",
+        "name": "Gà rán",
+        "image": "https://i.pinimg.com/736x/58/b4/ea/58b4ea47e104e77da833151b00ee2415.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "30",
+        "name": "bánh mỳ",
+        "image": "https://i.pinimg.com/736x/ed/30/16/ed30161e1de7f1eb61abf501d8771e27.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "31",
+        "name": "Thịt xiên",
+        "image": "https://i.pinimg.com/736x/04/6a/e8/046ae892b30d87e92d01d863d72d4dd3.jpg",
+        "category":"orther"
+    },
+    {
+        "id": "32",
+        "name": "Đậu phụ sốt",
+        "image": "https://i.pinimg.com/564x/d2/6a/f9/d26af991f97e03dead6d31354cf66a1b.jpg",
+        "category":"orther"
+    }
+]
