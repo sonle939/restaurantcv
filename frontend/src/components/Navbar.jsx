@@ -101,7 +101,7 @@ function Navbar({ heart, setHeart, card, setCard }) {
           </ul>
           <div className='navbar_controls'>
             <div className='nav_control_item'>
-              <Link to="/card"> {ranklocal === "admin" || ranklocal === "staff" ? "" : (<>CART({card.length})</>)}</Link>
+              <Link to="/card"> {ranklocal === "admin" || ranklocal === "staff" ? "" : (<>CART({card.filter(item=>item.userid==localStorage.getItem('id')).length})</>)}</Link>
             </div>
             <div className='nav_control_item'>
               {localStorage.getItem('id') === null ? <Link to="/heart"> {ranklocal === "admin" || ranklocal === "staff" ? "" : (<><i className="fa fa-heart-o" aria-hidden="true"></i>(0)</>)}</Link> : <Link to="/heart"> {ranklocal === "admin" || ranklocal === "staff" ? "" : (<><i className="fa fa-heart-o" aria-hidden="true"></i>({heart.filter((itemfilter)=>itemfilter.userid == localStorage.getItem('id')).length})</>)}</Link>}

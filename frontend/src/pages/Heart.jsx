@@ -37,7 +37,7 @@ function Heart({ heart, setHeart }) {
       amount: 1,
       description: item.description,
       userid: localStorage.getItem('id'),
-      pronameid: item.id
+      pronameid: item.pronameid
     }
     if (localStorage.getItem('id') === null) {
       alert("Bạn phải đăng nhập thì mới thêm được...");
@@ -47,7 +47,7 @@ function Heart({ heart, setHeart }) {
         .then(resault => {
           console.log(resault);
         });
-      alert('Them thanh cong')
+      //alert('Them thanh cong')
     }
   }
   return (
@@ -63,7 +63,7 @@ function Heart({ heart, setHeart }) {
           <i className="fa fa-angle-double-right" aria-hidden="true"></i>
           <Link to="/heart" className='Favourite'>Favourite</Link>
         </div>
-        {localStorage.getItem('id') === null || heart.length === 0 ? (
+        {localStorage.getItem('id') === null || heart.filter(item=>item.userid == localStorage.getItem('id')).length === 0  ? (
           <div className="container">
             <img src={heartlogo}/>
             <h2 className="title">
