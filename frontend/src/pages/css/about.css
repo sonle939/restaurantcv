@@ -176,6 +176,9 @@
     flex-direction: column;
     margin: 0 20px;
 }
+.chef_item:nth-child(5)  .chef_image{
+    height: 400px;
+}
 .chef_info{
     width: 100%;
     text-align: center;

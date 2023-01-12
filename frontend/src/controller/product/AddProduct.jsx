@@ -20,7 +20,7 @@ function Addproduct() {
   }, []);
 
   function getUsers() {
-    axios.get('http://localhost/groupseven/backend/category/').then(function (response) {
+    axios.get('http://localhost/restaurant/backend/category/').then(function (response) {
       console.log(response.data);
       setInputs(response.data);
     });

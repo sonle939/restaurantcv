@@ -12,14 +12,14 @@ function Category() {
   }, []);
 
   function getUsers() {
-    axios.get('http://localhost/groupseven/backend/category/').then(function (response) {
+    axios.get('http://localhost/restaurant/backend/category/').then(function (response) {
       console.log(response.data);
       setCategory(response.data);
     });
   }
 
   const deleteUser = (id) => {
-    axios.delete(`http://localhost/groupseven/backend/category/${id}/delete`).then(function (response) {
+    axios.delete(`http://localhost/restaurant/backend/category/${id}/delete`).then(function (response) {
       console.log(response.data);
       getUsers();
     });

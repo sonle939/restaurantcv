@@ -20,14 +20,14 @@ function InfoUser() {
     setInputs(values => ({ ...values, [name]: value }));
   }
   useEffect(() => {
-    axios.get(`http://localhost/groupseven/backend/user/${id}`).then((res) => {
+    axios.get(`http://localhost/restaurant/backend/user/${id}`).then((res) => {
       console.log(res.data)
       setInputs(res.data);
     });
   }, []);
   const handleUpdate = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost/groupseven/backend/user/${id}/edit`, inputs).then((response) => {
+    axios.put(`http://localhost/groupseven/restaurant/user/${id}/edit`, inputs).then((response) => {
       console.log(response.data);
     });
   }

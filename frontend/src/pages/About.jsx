@@ -2,10 +2,10 @@ import React from 'react'
 import "./css/about.css"
 import video1 from "../video/restaurant1.mp4";
 import video2 from "../video/video3.mp4";
-import bich from "../images/bich.jpg";
-import tuan from "../images/tuan.jpg";
+import bich from "../images/bich2.jpg";
+import tuan from "../images/tuanly.jpg";
 import son from "../images/son.jpg";
-import thang from "../images/thang.jpg";
+import thang from "../images/thangoanh1.jpg";
 import ngan from "../images/ngan.jpg";
 import { Link } from 'react-router-dom';
 import logo2 from "../images/logo4.png";

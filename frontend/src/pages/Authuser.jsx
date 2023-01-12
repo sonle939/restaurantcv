@@ -43,7 +43,7 @@ function Authuser() {
             image: user.image
         }
         console.log(senddata);
-        axios.post('http://localhost/groupseven/backend/loginandsignup/login.php', senddata)
+        axios.post('http://localhost/restaurant/backend/loginandsignup/login.php', senddata)
             .then((resault) => {
                 if (resault.data.Status === "200") {
                     window.localStorage.setItem('email', resault.data.email);

@@ -20,7 +20,7 @@ function AddUser() {
   };
   const submitAccount = (e) => {
     e.preventDefault();
-    axios.post('http://localhost/groupseven/backend/user/save', data)
+    axios.post('http://localhost/restaurant/backend/user/save', data)
       .then(resault => {
         console.log(resault);
         navigate("/account")

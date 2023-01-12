@@ -43,7 +43,7 @@ function Heart({ heart, setHeart }) {
       alert("Bạn phải đăng nhập thì mới thêm được...");
 
     } else {
-      axios.post('http://localhost/groupseven/backend/cart/save', data)
+      axios.post('http://localhost/restaurant/backend/cart/save', data)
         .then(resault => {
           console.log(resault);
         });

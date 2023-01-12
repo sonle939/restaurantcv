@@ -11,14 +11,14 @@ function BookingTable() {
   }, []);
 
   function getTable() {
-    axios.get('http://localhost/groupseven/backend/bookatable/save').then(function (response) {
+    axios.get('http://localhost/restaurant/backend/bookatable/save').then(function (response) {
       console.log(response.data);
       setTable(response.data);
     });
   }
 
   const deleteTable = (id) => {
-    axios.delete(`http://localhost/groupseven/backend/bookatable/${id}/delete`).then(function (response) {
+    axios.delete(`http://localhost/restaurant/backend/bookatable/${id}/delete`).then(function (response) {
       console.log(response.data);
       getTable();
     });

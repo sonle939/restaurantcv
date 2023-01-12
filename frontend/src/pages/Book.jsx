@@ -29,7 +29,7 @@ function Book() {
     if (localStorage.getItem('id') === null) {
       alert("Bạn phải đăng nhập thì mới đặt bàn được...")
     } else {
-      axios.post('http://localhost/groupseven/backend/bookatable/save', data)
+      axios.post('http://localhost/restaurant/backend/bookatable/save', data)
         .then(resault => {
           console.log(resault);
           alert("Đặt bàn thành công");

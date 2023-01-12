@@ -11,7 +11,7 @@ function UpdateUser() {
   const nagative = useNavigate();
   const { id } = useParams();
   useEffect(() => {
-    axios.get(`http://localhost/groupseven/backend/product/${id}`).then((res) => {
+    axios.get(`http://localhost/restaurant/backend/product/${id}`).then((res) => {
       console.log(res.data)
       setUpproduct(res.data); 
     });
@@ -22,7 +22,7 @@ function UpdateUser() {
     setUpproduct(values => ({ ...values, [name]: value }));
   }
   function getCategory() {
-    axios.get('http://localhost/groupseven/backend/category/').then(function (response) {
+    axios.get('http://localhost/restaurant/backend/category/').then(function (response) {
       console.log(response.data);
       setInputs(response.data);
     });

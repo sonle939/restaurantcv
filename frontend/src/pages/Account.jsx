@@ -34,14 +34,14 @@ function Account() {
   }, []);
 
   function getUsers() {
-    axios.get('http://localhost/groupseven/backend/user/').then(function (response) {
+    axios.get('http://localhost/restaurant/backend/user/').then(function (response) {
       console.log(response.data);
       setUsers(response.data);
     });
   }
 
   const deleteUser = (id) => {
-    axios.delete(`http://localhost/groupseven/backend/user/${id}/delete`).then(function (response) {
+    axios.delete(`http://localhost/restaurant/backend/user/${id}/delete`).then(function (response) {
       console.log(response.data);
       getUsers();
     });
