@@ -11,7 +11,7 @@ function UpdateUser() {
   const nagative = useNavigate();
   const { id } = useParams();
   useEffect(() => {
-    axios.get(`http://localhost/restaurant/backend/product/${id}`).then((res) => {
+    axios.get(`http://localhost/restaurantcv/backend/product/${id}`).then((res) => {
       console.log(res.data)
       setUpproduct(res.data); 
     });
@@ -22,7 +22,7 @@ function UpdateUser() {
     setUpproduct(values => ({ ...values, [name]: value }));
   }
   function getCategory() {
-    axios.get('http://localhost/restaurant/backend/category/').then(function (response) {
+    axios.get('http://localhost/restaurantcv/backend/category/').then(function (response) {
       console.log(response.data);
       setInputs(response.data);
     });
@@ -33,7 +33,7 @@ function UpdateUser() {
 
   const handleUpdate = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost/groupseven/backend/product/${id}/edit`, upproduct).then((response) => {
+    axios.put(`http://localhost/restaurantcv/backend/product/${id}/edit`, upproduct).then((response) => {
       console.log(response.data);
       nagative("/product");
     });

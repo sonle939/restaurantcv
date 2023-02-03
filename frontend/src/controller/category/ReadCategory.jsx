@@ -9,7 +9,7 @@ function ReadCategory() {
   const { id } = useParams();
   
   useEffect(() => {
-    axios.get(`http://localhost/restaurant/backend/category/${id}`).then((res) => {
+    axios.get(`http://localhost/restaurantcv/backend/category/${id}`).then((res) => {
       console.log(res.data)
       setInputs(res.data); 
     });

@@ -25,14 +25,14 @@ function Card({ card, setCard }) {
     if (localStorage.getItem('id') === null) {
       console.log('abc')
     } else {
-      axios.get('http://localhost/restaurant/backend/cart/').then(function (response) {
+      axios.get('http://localhost/restaurantcv/backend/cart/').then(function (response) {
         console.log(response.data);
         setCard(response.data);
       })
     }
   }
   const deleteCard = (id) => {
-    axios.delete(`http://localhost/restaurant/backend/cart/${id}/delete`).then(function (response) {
+    axios.delete(`http://localhost/restaurantcv/backend/cart/${id}/delete`).then(function (response) {
       console.log(response.data);
       getCard();
     });

@@ -17,7 +17,7 @@ function Home() {
   }, []);
 
   function getUsers() {
-    axios.get('http://localhost/restaurant/backend/product/').then(function (response) {
+    axios.get('http://localhost/restaurantcv/backend/product/').then(function (response) {
       console.log(response.data);
       setProduct(response.data);
     });

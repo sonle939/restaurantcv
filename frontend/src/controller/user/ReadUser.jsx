@@ -9,7 +9,7 @@ function ReadUser() {
   const { id } = useParams();
   
   useEffect(() => {
-    axios.get(`http://localhost/restaurant/backend/user/${id}`).then((res) => {
+    axios.get(`http://localhost/restaurantcv/backend/user/${id}`).then((res) => {
       console.log(res.data)
       setInputs(res.data); 
     });

@@ -12,14 +12,14 @@ function Product() {
   }, []);
 
   function getUsers() {
-    axios.get('http://localhost/restaurant/backend/product/').then(function (response) {
+    axios.get('http://localhost/restaurantcv/backend/product/').then(function (response) {
       console.log(response.data);
       setUsers(response.data);
     });
   }
 
   const deleteUser = (id) => {
-    axios.delete(`http://localhost/restaurant/backend/product/${id}/delete`).then(function (response) {
+    axios.delete(`http://localhost/restaurantcv/backend/product/${id}/delete`).then(function (response) {
       console.log(response.data);
       getUsers();
     });

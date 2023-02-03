@@ -23,7 +23,7 @@ function Menu() {
       alert("Bạn phải đăng nhập thì mới thêm được...");
 
     }else {
-      axios.post('http://localhost/restaurant/backend/heart/save', data)
+      axios.post('http://localhost/restaurantcv/backend/heart/save', data)
         .then(resault => {
           console.log(resault);
           alert("Them thanh cong")
@@ -35,7 +35,7 @@ function Menu() {
   }, []);
 
   function getproduct() {
-    axios.get('http://localhost/restaurant/backend/product/').then(function (response) {
+    axios.get('http://localhost/restaurantcv/backend/product/').then(function (response) {
       console.log(response.data);
       setDataProduct(response.data);
       setItemData(response.data);

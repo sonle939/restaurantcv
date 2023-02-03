@@ -11,7 +11,7 @@ function AddCategory() {
   };
   const submitCategory = (e) => {
     e.preventDefault();
-    axios.post('http://localhost/restaurant/backend/category/save', data)
+    axios.post('http://localhost/restaurantcv/backend/category/save', data)
       .then(resault => {
         console.log(resault);
         navigate("/category")

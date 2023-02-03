@@ -9,7 +9,7 @@ function UpdateUser() {
   const { id } = useParams();
   
   useEffect(() => {
-    axios.get(`http://localhost/restaurant/backend/user/${id}`).then((res) => {
+    axios.get(`http://localhost/restaurantcv/backend/user/${id}`).then((res) => {
       console.log(res.data)
       setInputs(res.data); 
     });
@@ -21,7 +21,7 @@ function UpdateUser() {
   }
   const handleUpdate = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost/restaurant/backend/user/${id}/edit`, inputs).then((response) => {
+    axios.put(`http://localhost/restaurantcv/backend/user/${id}/edit`, inputs).then((response) => {
       console.log(response.data);
       nagative("/account");
     });
